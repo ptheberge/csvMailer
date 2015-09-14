@@ -14,7 +14,7 @@ abstract class Controller
         return $this->app;
     }
 
-    protected function render($template) {
-        $this->app['slim']->render($template);
+    protected function render($template, $data = []) {
+        $this->app['slim']->render($template, $data);
     }
 }
